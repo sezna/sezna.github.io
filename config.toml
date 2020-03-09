@@ -1,0 +1,106 @@
+baseurl = "songq.in"
+languageCode = "en-us"
+Title = "Alex Hansen"
+# Copyright notice. This is displayer in the footer.
+copyright = "&copy; Copyright notice"
+custom_css = "/static/css/custom.css"
+
+# Google Analytics API key.
+# googleAnalytics = "Your Google Analytics tracking id"
+
+[params]
+  paginate = 10
+  # Social accounts. Link to these accounts are displayed in the header and
+  # footer
+  # twitter = "Your Twitter username"
+  # facebook = "Your Facebook username"
+  # instagram = "Your Instagram username"
+  # googleplus = "Your Google+ account URL" # https://plus.google.com/u/0/xxxxxx
+  github = "sezna"
+  # gitlab = "Your GitLab username"
+  # npm = "sezna"
+  # codepen = "Your CodePen username"
+  # dribbble = "Your Dribbble username"
+  # fivehundredpx = "Your 500px username" # 500px
+  # flickr = "Your Flickr username"
+  # pinterest = "Your Pinterest username"
+  # tumblr = "Your Tumblr username"
+  # vimeo = "Your Vimeo username"
+  # youtube = "Your YouTube username"
+  linkedin = "alexanderhansen2"
+  # medium = "Your Medium username"
+  # Disqus shortname
+  # disqus = ""
+  author = "Alex Hansen"
+  authorwebsite = "songq.in"
+  # avatar = "/path/to/avatar"
+  contact = "mailto:alex@alex-hansen.com"
+  bio = "Software engineer, musician, and hobbyist. Despite my intermediate at best level of Mandarin, I've named this website after my Chinese name."
+  # Short subtitle/tagline. This is displayed in the header.
+  subtitle = "song (松) qin (琴)"
+  # Logo image. This is displayed ogp image.
+  logo = "/icons/android-icon-144x144.png"
+  favicon = "/icons/favicon.ico"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 2
+
+[[menu.main]]
+    name = "Music"
+    url = "/music"
+    weight = 3
+ 
+# [[menu.main]]
+#   name = "Images"
+#   url = "/images"
+#   weight = 4
+
+[[menu.main]]
+    name = "Misc"
+    identifier = "misc"
+    weight = 5
+
+[[menu.main]]
+  parent = "misc"
+  name = "Public Keys"
+  url = "/keys.txt"
+  weight = 1
+
+# [[menu.main]]
+#   parent = "misc"
+#   name = "Collecting"
+#   url = "/collections"
+
+[related]
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 80
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = false
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = true
+
+  [[related.indices]]
+  name = "keywords"
+  weight = 150
+  [[related.indices]]
+  name  = "author"
+  toLower = true
+  weight = 30
+  [[related.indices]]
+  name  = "tags"
+  weight = 100
+  [[related.indices]]
+  name  = "date"
+  weight = 10
+  pattern = "2017"
+
+# theme = "hugo_theme_pickles"
