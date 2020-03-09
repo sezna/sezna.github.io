@@ -27,14 +27,7 @@ ___
 
 The luxury of picking a tool is seldom grand, like what language to use, what framework to develop in, what computers to buy; it can be `.map()` vs. a `for` loop or writing an abstraction vs copying and pasting _just one more time_. When faced with these decisions, some options are generally the "good": robust, sound, performant, or "elegant"; and some are the "bad": hacky, sometimes incorrect, copy/pasted, slow, or against the implementor's personal taste. In this sense, the most junior of engineers will also be choosing many tools for many jobs almost constantly. The mindset of becoming a finely-tuned decision function applies in this context as well, and is in fact, relative to the architectural level, of equal or greater impact on team velocity.
 
-As the employee "on the floor", the perspective is different. In a small company, the problems you handle as "problems that will only manifest when we have better resources" will probably be later categorized by yourself similarly, perhaps multiple times, before ultimately being categorized contrarily. Additionally, the inputs to your decision function will probably be altered much more frequently than those at a higher level. 
-
-The decision making process is really no different. What is important is the decision-making engineer assessing the trade-offs of these granular decisions consciously, and not simply solving ad-hoc in their comfort zone. An eloquent and masterful programmer must be willing to skimp on error handling when the demonstration for the contract is in a couple of hours, and likewise, the fresh and inexperienced programmer must be willing to learn how proper error bubbling is handled when building the operating system for a space mission.
-
 ___
 
 There is no paucity of public thought on how important being a "generalist" is in software. But also, be a partition function with scalpel-like precision. 
 
-___
-
-This post was brought to you by Java, Rust, Go, Kubernetes, Python, "Blockchain", AWS, The 12 Step Method, React Hooks, Macbooks, and snake oil.
