@@ -1,0 +1,41 @@
+filetype plugin indent on
+set number
+set background=dark
+syntax on
+set smartcase
+set tabstop=2
+set expandtab
+set shiftwidth=2
+nnoremap co :copen<CR>
+nnoremap cc :cclose<CR>
+nnoremap cm :call LanguageClient_contextMenu()<CR>
+inoremap jj <Esc>
+set undofile
+set undodir=~/.vim/undodir
+set noswapfile
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+
+
+" Plugins
+let g:LanguageClient_serverCommands = {
+\ 'rust': ['ra_lsp_server'],
+\ }
+let g:mix_format_on_save = 1
+call plug#begin('~/.vim/plugs')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+Plug 'leafgarland/typescript-vim'
+Plug 'elixir-editors/vim-elixir'
+Plug 'tpope/vim-endwise'
+Plug 'mhinz/vim-mix-format'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+call plug#end()
+
