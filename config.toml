@@ -73,6 +73,18 @@ custom_css = "/static/css/custom.css"
   url = "/keys.txt"
   weight = 1
 
+[[menu.main]]
+  parent = "misc"
+  name = "Vimrc"
+  url = "/vimrc.txt"
+  weight = 1
+
+[[menu.main]]
+  parent = "misc"
+  name = "Bashrc"
+  url = "/bashrc.txt"
+  weight = 1
+
 # [[menu.main]]
 #   parent = "misc"
 #   name = "Collecting"
