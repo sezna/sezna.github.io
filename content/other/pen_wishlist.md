@@ -1,6 +1,6 @@
 ---
 title: "Pen Wishlist"
-draft: true 
+draft: false
 ---
 
 This is my pen wishlist. I'm looking to acquire all of the following pens, so if you have one for sale, please get in contact with me.
