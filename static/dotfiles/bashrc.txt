@@ -11,12 +11,16 @@ alias gc='git commit'
 alias yb='yarn build'
 alias yf='yarn format'
 alias yt='yarn test'
-alias ft='cd ~/42layers'
 alias abc2xml='python ~/Downloads/abc2xml_221/abc2xml.py'
+alias ft='cd ~/42Layers'
+alias ftc='cd ~/42Layers/crates'
 
 alias vim='nvim'
 alias vi='nvim'
+alias vsk='vim $(sk)'
+alias csk='cd $(sk)'
 
+alias dka='docker stop $(docker ps -a -q)'
 
 export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
@@ -24,8 +28,9 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]λ "
-export PATH=$PATH:$GOPATH:$GOBIN
+export PATH=$PATH:$GOPATH:$GOBIN:$HOME/.local/bin:$HOME/opt/REAPER:$HOME/bin
 export PG_PASSWORD=password
+export PATH=$HOME/.local/bin:$PATH
 
 
 # ~/.bashrc: executed by bash(1) for non-login shells.

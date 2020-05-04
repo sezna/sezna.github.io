@@ -1,0 +1,81 @@
+filetype plugin indent on
+set number
+set background=dark
+syntax on
+set smartcase
+set tabstop=2
+set expandtab
+set shiftwidth=2
+nnoremap co :copen<CR>
+nnoremap cc :cclose<CR>
+nnoremap cm :call LanguageClient_contextMenu()<CR>
+inoremap jj <Esc>
+nnoremap 'bn :bn<CR>
+nnoremap 'bp :bp<CR>
+nnoremap cu :call FloatUp()<CR>
+nnoremap cd :call FloatDown()<CR>
+vnoremap cu :call FloatUp()<CR>
+vnoremap cd :call FloatDown()<CR>
+nnoremap 'n :call CocAction('diagnosticNext')<CR>
+nnoremap 'p :call CocAction('diagnosticPrevious')<CR>
+set undofile
+set undodir=~/.vim/undodir
+set noswapfile
+" Return to last edit position when opening files 
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+
+
+" Plugins
+call plug#begin('~/.vim/plugs')
+Plug 'neoclide/coc.nvim', {'branch': 'release'} 
+" For Coc, I use:
+" rust-analyzer
+" coc-json
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+Plug 'leafgarland/typescript-vim'
+Plug 'elixir-editors/vim-elixir'
+Plug 'tpope/vim-endwise'
+Plug 'mhinz/vim-mix-format'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'rust-lang/rust.vim'
+Plug 'zivyangll/git-blame.vim'
+call plug#end()
+
+" Plugin conf
+" Auto rustfmt on save
+let g:rustfmt_autosave = 1
+let g:rustfmt_fail_silently = 1
+let g:rustfmt_emit_files = 1
+" format elixir on save
+let g:mix_format_on_save = 1
+
+
+" Move up to nonempty column
+function FloatUp()
+    while line(".") > 1
+                \ && (strlen(getline(".")) < col(".")
+                \ || getline(".")[col(".") - 1] =~ '\s')
+        norm k
+    endwhile
+endfunction
+
+" Move down to nonempty column
+function FloatDown()
+    while line(".") > 1
+                \ && (strlen(getline(".")) < col(".")
+                \ || getline(".")[col(".") - 1] =~ '\s')
+        norm j
+    endwhile
+endfunction
+
+
