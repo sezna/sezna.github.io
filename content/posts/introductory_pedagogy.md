@@ -1,6 +1,6 @@
 ---
 title: "Teaching Computational Thought"
-date: 2020-03-07T09:24:36-08:00
+date: 2020-05-20T09:24:36-08:00
 tag: pedagogy
 draft: false 
 ---
