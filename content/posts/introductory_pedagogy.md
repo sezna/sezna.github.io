@@ -1,0 +1,40 @@
+---
+title: "Teaching Computational Thought"
+date: 2020-03-07T09:24:36-08:00
+tag: pedagogy
+draft: false 
+---
+# Teaching Computational Thought
+Learning how to program, or the general computational thought process that comes along with programming and computer science, is difficult. When learning, there is a clear partition of those who "can" and those, like yourself, who "cannot". On occasion, you can even observe your fellow students transition from one side of this binary categorization to the other seemingly easily. They acquire some intuition that you simply are not arriving at, no matter how much you study the material and pay attention in class. 
+
+As a lecturer of introductory computer science, there is a dichotomy between what I am _teaching_ and what I want the students to _learn_. I teach programming and computer science. Data structures, APIs, for loops, optimization strategies, memory management, etc. What I hope the students learn is _computational thought_, a form of reasoning and logic that, upon embracing, reveals and implies the individual subjects I am teaching. Unfortunately, traditional computational pedagogy has, for the most part, neglected this dichotomy, instead relying on students to accidentally learn computational thought tangentially. When faced with a large number of failing students, it would claim that the inherent nature of the subject is simply difficult. The aforementioned situation, fellow students acquiring a mystical and transcending understanding, is what it feels like when your instructor is teaching _programming_ but your fellow student has accidentally learned _computational thought_. 
+
+I could expound upon this hypothesis further, and I probably will in the future, but right now I simply want to give exposition a few of the instructional techniques I have found most valuable in teaching computational thought. These are primarily useful in introductory programming courses.
+___
+
+### Concept Transfer
+Two pitfalls many instructors fall victim to are to provide _too much_ direct information and to provide _to little_. In a course which has a lecture or two and then a homework assignment, a lecturer should aim to fully explain and provide examples of the core computational concept that the homework requires, but on an entirely different problem. The most productive method of instilling computational thought via programming is to allow students the opportunity to take the generic concepts that have been taught about one specific problem and apply them to a different problem. This concept has been fully embraced in traditional mathematics and language departments, and yet still lags behind in computer science. 
+
+To have a fully solved and explained solution to one problem and to apply that solution to a different problem is to demonstrate understanding of the underlying structure of that solution technique. Practicing this, and it must be practicied _repetitively_ as if the student was going to a programming gym and doing reps, is the _only_ way to get comfortable at the manner of problem solving that programming requires. Very little learning happens in the classroom: the frustration of performing concept transfer is where the learning happens. Lecturers must recognize this and resist the instinct to try to instill full understanding in the classroom. It simply won't happen. Instead, focus on presenting all of the clues and reference materials the students will need to refer back to when in the heat of battle. What follows is an example introductory CS lecture layout and homework assignment:
+
+* Lecture: 
+  * Testing if a number is even or odd
+  * Adding up even numbers from _0_ to _n_ using a for loop
+  * Reading user input and casting between types
+* Homework:
+  * Write a program which reads a number _n_ from the user and prints out all prime numbers less than or equal to that number.
+
+The lectures here cover the same underlying concepts that the homework will require: functions of the form `Int -> Bool`, looping or recursion, and type casting. The students are therefore required to distill the concepts from the lectured examples and transfer them into a new problem. The job of the instructor is to ensure that the homework requires only those concepts from class, and the job of the student is to notice the underlying patterns and apply them.
+
+### Curriculum Structure
+Problem solving in computer science strongly resembles some fields of mathematics and logic: discrete mathematics, symbolic logic, predicate logic, and similar subjects all aim at exactly the core of what most programming classes are trying to teach. Programming is simply a relatively modern tool we can use to exercise these logical patterns and see the results. Why is it, then, that the course which teaches how to use the tool rarely follows or requires one to first learn what the problem is in the first place? A carpenter does not first learn how to hammer nails into all sorts of arbitrary places and materials around him, and then subsequently learn that this whole time he was supposed to be assembling a chest of drawers. Perhaps the reason is to appease the students, the customers of the educational system: they signed up to learn computer science, and beginning tangentially is therefore not marketable. But other disciplines are not subject to this treatment. To learn biology, one must tangentially learn at least introductory chemistry. To learn composition, one must learn how to critically listen, or critically read. 
+
+The marketability and profitability of programming in our current world is impossible to ignore. Many students will arrive at school hoping to exchange tuition money for a brighter future. If they sense that the curriculum is not going to hold up its end of the deal, then they would seek to allocate their tuition elsewhere. This is understandable. I propose that within the first semester, section, or unit of computer science, there is one introductory course which teaches both introductory logic and programming in parallel, executing the concepts of one subject within the other. Following this course, the importance of the relationship between computational, rational, and logical thought and the act of programming will be acknowledged by the student, and subsequent courses can branch off into their own domains: logic, data structures, formal verification, security, etc.
+
+___
+
+I have had the privilege of studying Computer Science at multiple universities. I have seen all sorts of instructional staff and have received many, many hours worth of lectures. I've also been a TA, teaching introductory classes, assisting both talented teachers and disinterested teachers. I am now an instructor of introductory programming at the University of Washington night school, teaching professionals who have never dealt with programming before. I have had the chance to observe all sorts of teaching styles, both successful and unsuccessful.
+
+The absolute worst method of teaching programming is to focus on the programming techniques themselves. One particularly malignant example is the _for loop_. Many instructors fail to explain this one concept clearly, and as a result students are left to learn for loops on their own through repetitive head-bashing. Upon bashing their head against the wall enough times to complete the homework, the student turns in a correct assignment and the teacher assumes their teaching method had no issues. The cycle continues. A proper teaching of for loops should involve at least a basic understanding of the concept of inductive reasoning, as well as homework which requires the students to write incredibly repetitive code, primally demonstrating the need for some sort of repetition mechanism. 
+
+As computer science becomes a more mature field, I believe it will achieve the pedagogical success of the fields which it was birthed from: language, science, logic, engineering, and mathematics. My faith in this is what implores me to help usher in this change.
