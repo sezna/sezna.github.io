@@ -7,14 +7,16 @@ draft: false
 |---------|------|--------------------|--------------------|-----------------------|---------------------------------|
 | Hess    | 2018 | Cabernet Sauvignon | Napa Valley        | Hess Select North Coast Cabernet Sauvignon | |
 
-On the _nose_, strawberries, raisin. Light and sweet. Strawberry jam, 
+On the _nose_, strawberries, raisin. Light and sweet. Strawberry jam, vanilla.
 
-On the _palate_, more strawberry, raisin, fresh grape. Very sweet with hints of citrus and some cocoa. 
+On the _palate_, more strawberry, raisin, fresh grape. Very sweet with hints of citrus, vanilla, and some cocoa. 
 
 On the _finish_, subtle and not very acidic. Does not go on for too long, and is overall enjoyable.
 
 This is a very easy to drink cabernet. Predominantly strawberry with hints of cocoa, if I had to characterize it. Very 
 well done and not too challenging to understand.
+
+_note: Mary hated this wine and said it tastes like dirt._
 
 8/10
 
