@@ -2,6 +2,24 @@
 title: "Wine Reviews"
 draft: false
 ---
+
+# Apothic Cabernet
+| Company | Year | Type               | Location           | Name                  | Details                         |
+|---------|------|--------------------|--------------------|-----------------------|---------------------------------|
+| Apothic | 2019 | Cabernet Sauvignon | Modesto, California| Apothic Cab           | |
+
+On the _nose_, very familiar scent, cherry and strawberry. Bit of blackberry
+
+On the _palate_, smooth and sweet. More typical strawberry notes.
+
+On the _finish_, brief and sweet.
+
+A prototypical inoffensive cabernet. Probably good to stock for things like sangria or friends who don't like stronger flavors,
+but I definitely prefer more bite and complexity. Given the price of $7 at Fred Meyer, I could understand keeping some around.
+Better than other things at that price.
+
+3/5 due to price. 2/5 if it cost more.
+
 # 2019 Domaine Saint Andre Blanc
 #### 2021-10-30
 | Company             | Year | Type             | Location           | Name   | Details                         |
@@ -18,8 +36,6 @@ Overall, not terrible, but not a buy-again. Just pretty meh -- it would be bette
 or a more complex flavor, but the way it starts sweet and goes bitter is off putting.
 
 2/5
-
-
 # Hess Select North Coast Cabernet Sauvignon 2018
 #### 2021-10-30
 | Company | Year | Type               | Location           | Name                  | Details                         |
