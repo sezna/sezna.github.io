@@ -3,6 +3,23 @@ title: "Wine Reviews"
 draft: false
 ---
 
+# Faust 2018 Cabernet Sauvignon
+#### 2021-12-29
+| Company | Year | Type               | Location           | Name                  | Details                         |
+|---------|------|--------------------|--------------------|-----------------------|---------------------------------|
+| Faust   | 2018 | Cabernet Sauvignon | Napa Valley        | Cabernet Sauvignon    | |
+
+On the _nose_, very light strawberry and dark cherries, a sweeter nose. A dark currant smell combines with the strawberry and kind of reminds me of a dark rum?
+
+On the _palate_, cooling, tart, and acidic. Aggressive dark cherry, agressive chocolate.
+
+On the _finish_, drying and tart. 
+
+Very powerful to just drink on its own -- accompanies a meal perfectly. This would go well with lamb or steak. Maybe too powerful to just casually drink without food?
+
+4/5, might actually stock a few for having with a steak.
+
+
 # Apothic Cabernet
 | Company | Year | Type               | Location           | Name                  | Details                         |
 |---------|------|--------------------|--------------------|-----------------------|---------------------------------|
