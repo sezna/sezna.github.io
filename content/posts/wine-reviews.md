@@ -3,6 +3,20 @@ title: "Wine Reviews"
 draft: false
 ---
 
+# Mark Ryan Long Haul 2018
+#### 2021-12-30
+| Company | Year | Type               | Location           | Name                  | Details                         |
+|---------|------|--------------------|--------------------|-----------------------|---------------------------------|
+|Mark Ryan| 2018 | Red Blend          | Walla Walla, WA    | Long Haul             | |
+
+On the _nose_, blackberry, dark cherry.
+
+On the _palate_, wow this is good. Cherry, blackberry, bit of chocolate. Muuuch smoother than the Faust from yesterday, and accordingly, the finish is less aggressive.
+
+On the _finish_, definitely short and without any significant punch. 
+
+4/5 -- this one is really good, and could be stocked as a "nice wine".
+
 # Faust 2018 Cabernet Sauvignon
 #### 2021-12-29
 | Company | Year | Type               | Location           | Name                  | Details                         |
@@ -17,7 +31,7 @@ On the _finish_, drying and tart.
 
 Very powerful to just drink on its own -- accompanies a meal perfectly. This would go well with lamb or steak. Maybe too powerful to just casually drink without food?
 
-4/5, might actually stock a few for having with a steak.
+3/5, too punchy off the bat, and I was kind of tired of it by the end of the glass.
 
 
 # Apothic Cabernet
