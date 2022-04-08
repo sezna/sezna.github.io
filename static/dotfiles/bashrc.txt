@@ -1,6 +1,9 @@
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
-alias audio='pavucontrol'
+export PATH=$PATH:/opt/homebrew/bin
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/alexanderhansen/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Users/alexanderhansen/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/alexanderhansen/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/alexanderhansen/Downloads/google-cloud-sdk/completion.bash.inc'; fi
 alias cb='cargo build'
 alias cbr='cargo build --release'
 alias cr='cargo run'
@@ -8,19 +11,18 @@ alias ct='cargo test'
 alias gs='git status'
 alias ga='git add -u'
 alias gc='git commit'
+alias ls='exa'
 alias yb='yarn build'
 alias yf='yarn format'
 alias yt='yarn test'
+alias ft='cd ~/42layers'
 alias abc2xml='python ~/Downloads/abc2xml_221/abc2xml.py'
-alias ft='cd ~/42Layers'
-alias ftc='cd ~/42Layers/crates'
+alias rforc='(cd ~/code/sway/forc; cargo build; mv ../target/debug/forc ~/.cargo/bin)'
+alias rrforc='(cd ~/code/sway/forc; cargo build --release; mv ../target/release/forc ~/.cargo/bin)'
 
 alias vim='nvim'
 alias vi='nvim'
-alias vsk='vim $(sk)'
-alias csk='cd $(sk)'
 
-alias dka='docker stop $(docker ps -a -q)'
 
 export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
@@ -28,9 +30,8 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\]λ "
-export PATH=$PATH:$GOPATH:$GOBIN:$HOME/.local/bin:$HOME/opt/REAPER:$HOME/bin
+export PATH=$PATH:$GOPATH:$GOBIN
 export PG_PASSWORD=password
-export PATH=$HOME/.local/bin:$PATH
 
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
@@ -125,7 +126,6 @@ fi
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -151,7 +151,34 @@ if ! shopt -oq posix; then
   fi
 fi
 
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+alias eh='echo "rGPdjmVH8wz27R6" | pbcopy'
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH=$PATH:$HOME/.cargo/bin
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+
+# zdd - cd to selected directory
+zdd() {
+  local dir
+  dir="$(
+    find "${1:-.}" -path '*/\.*' -prune -o -type d -print 2> /dev/null \
+      | fzf +m \
+          --preview='tree -C {} | head -n $FZF_PREVIEW_LINES' \
+          --preview-window='right:hidden:wrap' \
+          --bind=ctrl-v:toggle-preview \
+          --bind=ctrl-x:toggle-sort \
+          --header='(view:ctrl-v) (sort:ctrl-x)' \
+  )" || return
+  cd "$dir" || return
+}
+
+alias zd="zdd()"
+
+export RUSTC_WRAPPER='sccache'
