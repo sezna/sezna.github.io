@@ -26,8 +26,3 @@ The decision-making engineer should view themself as a function which takes prio
 ___
 
 The luxury of picking a tool is seldom grand, like what language to use, what framework to develop in, what computers to buy; it can be `.map()` vs. a `for` loop or writing an abstraction vs copying and pasting _just one more time_. When faced with these decisions, some options are generally the "good": robust, sound, performant, or "elegant"; and some are the "bad": hacky, sometimes incorrect, copy/pasted, slow, or against the implementor's personal taste. In this sense, the most junior of engineers will also be choosing many tools for many jobs almost constantly. The mindset of becoming a finely-tuned decision function applies in this context as well, and is in fact, relative to the architectural level, of equal or greater impact on team velocity.
-
-___
-
-There is no paucity of public thought on how important being a "generalist" is in software. But also, be a partition function with scalpel-like precision. 
-
