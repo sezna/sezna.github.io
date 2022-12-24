@@ -1,5 +1,5 @@
 ---
-title: "A Time for Mercy by John Grisham"
+title: "Book Review: A Time for Mercy by John Grisham"
 date: 2022-07-03T09:24:36-08:00
 draft: false
 ---

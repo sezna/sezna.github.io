@@ -3,8 +3,12 @@
 hugo -t hugo_theme_pickles --baseUrl=/
 # upload to bucket
 # scp -r ../songq.in root@songq.in:~/
-rsync -rzv . root@songq.in:~/songq.in
+# rsync -rzv . root@songq.in:~/songq.in
 
+mv public docs
+git add docs
+git commit -m "deploy"
+git push origin master
 
 # ssh -t root@songq.in "cd songq.in && hugo server -t hugo_theme_pickles -w -D -p 1234 --baseUrl=https://songq.in --appendPort=false"
 # ssh -t root@songq.in "cd songq.in/public && screen -d -m python -m SimpleHTTPServer 1234 ."
