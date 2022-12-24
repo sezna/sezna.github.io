@@ -1,0 +1,121 @@
+let mapleader = " "
+filetype plugin indent on
+set number
+set background=dark
+syntax on
+set smartcase
+set tabstop=2
+set expandtab
+set shiftwidth=2
+set ignorecase
+set smartcase
+
+nnoremap co :copen<CR>
+nnoremap cc :cclose<CR>
+nnoremap cm :call LanguageClient_contextMenu()<CR>
+inoremap jj <Esc>
+set undofile
+set undodir=~/.vim/undodir
+set noswapfile
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+
+
+" Plugins
+
+let g:mix_format_on_save = 1
+call plug#begin('~/.vim/plugs')
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" My CoC stuff: rust-analyzer and HIE (haskell ide engine)
+Plug 'elmcast/elm-vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'elixir-editors/vim-elixir'
+Plug 'tpope/vim-endwise'
+Plug 'mhinz/vim-mix-format'
+Plug 'godlygeek/tabular'
+" Plug 'plasticboy/vim-markdown'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+" Plug 'rust-lang/rust.vim' try rust analyzer instead`
+Plug 'zivyangll/git-blame.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+if executable('git')
+    Plug 'tpope/vim-fugitive'
+endif
+Plug 'machakann/vim-highlightedyank'
+Plug 'andymass/vim-matchup'
+Plug 'RRethy/vim-illuminate'
+Plug 'rust-lang/rust.vim'
+Plug 'junegunn/goyo.vim'
+
+call plug#end()
+
+" Map fzf :GFiles to a shortcut
+" nnoremap ff :GFiles<CR>
+nnoremap ff :Rg <CR>
+
+
+"nice indentLine
+let g:indentLine_char = '┆'
+
+" from https://github.com/timvisee/dotfiles/blob/master/vim/vimrc
+" We're using Vim, not Vi
+set nocompatible
+" We've a fast terminal
+set ttyfast
+
+" Use lazy redraw, do not redraw during macro execution
+set lazyredraw
+
+" We're using UTF-8 as file/script encoding
+scriptencoding utf-8
+set encoding=utf-8
+
+" Detect file types and specific indents/settings
+filetype indent plugin on
+
+" Highlight matching brackets
+set showmatch
+
+" No text wrapping
+" set nowrap
+
+" Matching bracket color
+hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
+
+" Move up/down display lines (with wrap on), instead of full lines
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+
+
+""""""""""""" end 
+
+" Auto rustfmt on save
+let g:rustfmt_autosave = 1
+let g:rustfmt_fail_silently = 1
+let g:rustfmt_emit_files = 1
+
+nnoremap <Leader>g :Goyo<CR>
+let g:goyo_width = 120
+try
+    nmap <silent> <Leader>n :call CocAction('diagnosticNext')<cr>
+    nmap <silent> <Leader>p :call CocAction('diagnosticPrevious')<cr>
+endtry
+
+function! RipgrepFzf(query, fullscreen)
+  let command_fmt = 'rg --column --line-number --no-heading --color=always --smart-case -- %s || true'
+  let initial_command = printf(command_fmt, shellescape(a:query))
+  let reload_command = printf(command_fmt, '{q}')
+  let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
+  call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
+endfunction
+
+command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
