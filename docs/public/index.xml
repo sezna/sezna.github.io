@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alex Hansen</title>
+    <link>/</link>
+    <description>Recent content on Alex Hansen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright notice</copyright>
+    <lastBuildDate>Tue, 04 Oct 2022 09:24:36 -0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Book Review: John Grisham&#39;s Camino Island</title>
+      <link>/posts/camino-island/</link>
+      <pubDate>Tue, 04 Oct 2022 09:24:36 -0800</pubDate>
+      
+      <guid>/posts/camino-island/</guid>
+      <description>Camino Island by John Grisham is my least favorite of his books so far. While the first two I read, A Time to Kill and A Time for Mercy followed Jake Brigance&amp;rsquo;s law practice, Camino Island follows a main character Mercer in a much less anxious plot. As an aside, near Seattle there is a Camano Island, Mercer Island, and Mercer street, so I was surprised when the book did not take place in Washington.</description>
+    </item>
+    
+    <item>
+      <title>Book Review: A Time for Mercy by John Grisham</title>
+      <link>/posts/a-time-for-mercy/</link>
+      <pubDate>Sun, 03 Jul 2022 09:24:36 -0800</pubDate>
+      
+      <guid>/posts/a-time-for-mercy/</guid>
+      <description>I&amp;rsquo;ve just finished A Time for Mercy by John Grisham. This is the second novel I&amp;rsquo;ve read by him, the first being A Time to Kill.
+This novel, as with the first, catered to my taste for drama. Uniquely, I like suspenseful plots, but too much suspense or grit can cause me to put a book down. In the case of Stephen King&amp;rsquo;s The Dark Tower series, him graphically killing off the main party&amp;rsquo;s small animal companion caused me to put down the book entirely.</description>
+    </item>
+    
+    <item>
+      <title>Teaching Computational Thought</title>
+      <link>/posts/introductory_pedagogy/</link>
+      <pubDate>Wed, 20 May 2020 09:24:36 -0800</pubDate>
+      
+      <guid>/posts/introductory_pedagogy/</guid>
+      <description>Teaching Computational Thought Learning how to program, or the general computational thought process that comes along with programming and computer science, is difficult. When learning, there is a clear partition of those who &amp;ldquo;can&amp;rdquo; and those, like yourself, who &amp;ldquo;cannot&amp;rdquo;. On occasion, you can even observe your fellow students transition from one side of this binary categorization to the other seemingly easily. They acquire some intuition that you simply are not arriving at, no matter how much you study the material and pay attention in class.</description>
+    </item>
+    
+    <item>
+      <title>The Annotated Turing by Charles Petzold</title>
+      <link>/posts/annotated-turing/</link>
+      <pubDate>Tue, 24 Mar 2020 09:24:36 -0800</pubDate>
+      
+      <guid>/posts/annotated-turing/</guid>
+      <description>The Annotated Turing is a book by Charles Petzold, which I picked up a few years back when I was going through a theory class and wanted some extracurricular reading. As with many attempted extracurriculars, this did not happen that semester, nor the next, nor at all during my education. As the book had finished its proper incubation period last week, I finally read it. I&amp;rsquo;ve collected some thoughts on it here.</description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>/music/</link>
+      <pubDate>Sun, 08 Mar 2020 11:51:50 -0700</pubDate>
+      
+      <guid>/music/</guid>
+      <description>To see my only formally released album, check out our bandcamp page. Instrumental metal.
+To see my personal demos as they accumulate towards an eventual album, check out my soundcloud. I write mostly metal, but there are some other things interspersed in there as well.
+If you&amp;rsquo;re in Seattle/PNW and would like to write this kind of music together, I&amp;rsquo;m always interested in collaborating. Contact me by sending me an email.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sun, 08 Mar 2020 11:49:34 -0700</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I&amp;rsquo;m a software engineer who works primarily in Rust. I also make music. I have two cats and enjoy hockey.
+Some things I&amp;rsquo;m proud of:
+I was the second engineer at Osmos, and built out the in-house AI there. I created the Sway Programming Language and cut my compiler chops there. I have many opinions on languages and future languages I want to create, and I&amp;rsquo;m thankful to Fuel for giving me the chance to make a real compiler for real users.</description>
+    </item>
+    
+    <item>
+      <title>Choosing the Right Tool for the Job</title>
+      <link>/posts/right-tool-right-job/</link>
+      <pubDate>Sat, 07 Mar 2020 09:24:36 -0800</pubDate>
+      
+      <guid>/posts/right-tool-right-job/</guid>
+      <description>Programming languages, and to a lesser extent software technologies in general, have an annoying tendency to polarize and fanaticize fanbases. Inherent in tauting benefits and advantages over other systems is implicit disapproval of systems which do not uphold the same standard or principle. This trend exists beyond software, but from my narrow world view, and especially as a Rust programmer, I can only observe it in this context.
+This is, of course, not the fault of any one technology itself.</description>
+    </item>
+    
+    <item>
+      <title>Pen Wishlist</title>
+      <link>/other/pen_wishlist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/other/pen_wishlist/</guid>
+      <description>This is my pen wishlist. I&amp;rsquo;m looking to acquire all of the following pens, so if you have one for sale, please get in contact with me.
+Namiki Emperor (old or new nib) Armando Simoni Club Bologna Extra Arco Wahl Eversharp Decoband Superflex (the new model) Sailor KOP with inverted 2-tone nib (primary silver; gold lines) (Asian Way is the only one I know of) Looking for some sort of Danitrio to start the Danitrio section of my collection Visconti Homo Sapiens Bronze Age Maxi w/ 2-tone nib (surprisingly hard to track doWn these days) Namiki Yukari Milky Way Sailor KOP Pro Gear </description>
+    </item>
+    
+  </channel>
+</rss>

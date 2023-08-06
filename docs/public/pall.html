@@ -1,0 +1,71 @@
+<html>
+  <style>
+body {
+  font-family: monospace;
+  font-weight: 700;
+  font-size:50px;
+  padding:20px;
+  background:#000;
+}
+
+.email-form {
+display: flex;
+flex-direction: row;
+justify-content: fill;
+}
+.email-input {
+  width: 80%;
+  height: 10%;
+  font-size: 50px;
+  font-family: monospace;
+  background-color: #00000f;
+  color: #fffffc;
+}
+.email-submit {
+  color: #fffffc;
+  width: 20%;
+  height: 10%;
+  font-size: 50px;
+  font-family: monospace;
+  background-color: #00000f;
+}
+
+.type {
+  color:#0000;
+  background:
+    linear-gradient(-90deg,orange 5px,#0000 0) 10px 0,
+    linear-gradient(#fffFFC 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+   b .7s infinite steps(1),   
+   t calc(var(--n)*.1s) steps(var(--n)) forwards;
+}
+
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+  </style>
+  <body>
+  <span class="type"  style="--n:53">
+    privacy.
+    <br />
+    security.
+    <br />
+    self custody.
+
+  <br />
+  <br />
+  waiting list&#58; 	</span>
+  <div class="email-form">
+  <input class="email-input" type="text" placeholder="email"></input>
+  <button class="email-submit">submit</button>
+  </div>
+
+  </body>
+</html>
